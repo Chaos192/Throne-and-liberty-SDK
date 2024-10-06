@@ -9,25 +9,21 @@
 // FORWARD DECLARATIONS
 
 
-namespace LTOD_Dark01_New { class USequenceDirector_C; }
-
-namespace BP_MainMenu_AudioBTN_0 { class UBP_MainMenu_AudioBTN_C; }
-
-namespace Polymorph_DE_Coop_BS_Dancer_Out { class USequenceDirector_C; }
-
-namespace BP_MainMenu_AudioBTN { class UBP_MainMenu_AudioBTN_C; }
-
-namespace Polymorph_Boutique_Custom_Change { class USequenceDirector_C; }
-
 namespace Polymorph_DE_Coop_BS_Dancer { class USequenceDirector_C; }
+
+namespace LTOD_Dark01_New { class USequenceDirector_C; }
 
 namespace Polymorph_Ground_HolyKnight_Common { class USequenceDirector_C; }
 
-namespace Polymorph_Common_Siege_Restore { class USequenceDirector_C; }
+namespace Global_TOD_New { class USequenceDirector_C; }
+
+namespace Polymorph_DE_Coop_BS_Dancer_Out { class USequenceDirector_C; }
+
+namespace Polymorph_Boutique_Custom_Change { class USequenceDirector_C; }
 
 namespace Polymorph_Ground_Objective_Common { class USequenceDirector_C; }
 
 namespace Polymorph_Ground_Usurper_Common { class USequenceDirector_C; }
 
-namespace Global_TOD_New { class USequenceDirector_C; }
+namespace Polymorph_Common_Siege_Restore { class USequenceDirector_C; }
 

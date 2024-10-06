@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "InactiveBehaviour_Enum_structs.hpp"
+#include "UserInput_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "CoreUObject_structs.hpp"
-#include "UserInput_Enum_structs.hpp"
+#include "InactiveBehaviour_Enum_structs.hpp"
 #include "InputCore_structs.hpp"
 
 

@@ -9185,86 +9185,87 @@ static_assert(alignof(UTLAnimationStatics) == 0x000008, "Wrong alignment on UTLA
 static_assert(sizeof(UTLAnimationStatics) == 0x000028, "Wrong size on UTLAnimationStatics");
 
 // Class TLScene.TLGameData
-// 0x0B00 (0x0B30 - 0x0030)
+// 0x0B28 (0x0B58 - 0x0030)
 class UTLGameData final : public UPrimaryDataAsset
 {
 public:
 	TSoftObjectPtr<class UMaterialParameterCollection> GlobalMPC;                                         // 0x0030(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialParameterCollection> PermutationMPC;                                    // 0x0058(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSoftObjectPtr<class UMaterialParameterCollection> OceanMPC;                                          // 0x0080(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterial>               EnvInfluenceMaterial;                              // 0x00A8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterial>               EnvInfluenceFadeMaterial;                          // 0x00D0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTextureRenderTarget2D>  EnvInfluenceRenderTarget;                          // 0x00F8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTexture2D>              EnvFieldTexture;                                   // 0x0120(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMapEnvironmentExternalTrackOverrideData> ExternalTrackOverride;                             // 0x0148(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterialInterface>      RouteShapeMaterial;                                // 0x0170(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UStaticMesh>             PathFollowWStaticMesh;                             // 0x0198(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaproom>                PathFollowMapRoom;                                 // 0x01C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UCurveFloat>             TimeLapseCurve;                                    // 0x01E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterialInterface>      MapWaterShapeMaterial;                             // 0x0210(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterial>               FarLandscapeMaterial;                              // 0x0238(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UStaticMesh>             CollisionCylinderComplex;                          // 0x0260(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UStaticMesh>             CollisionCylinderSimple;                           // 0x0288(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneMakeupOption> CustomizingSkinColorSpaceMakeupOption;             // 0x02B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneMakeupOption> CustomizingDefaultColorSpaceMakeupOption;          // 0x02D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterial>               ModelCharacterMergedMaterialForPC;                 // 0x0300(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UMaterial>               ModelCharacterMergedMaterialForNPC;                // 0x0328(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTexture2D>              ModelCharacterMergedMaterialIrisTexture;           // 0x0350(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTexture2D>              CompositePCDefaultSkinTexture;                     // 0x0378(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealMaterialSet>      CompositePCAtlasMaterialSet;                       // 0x03A0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   MyPCComponentClass;                                // 0x03C8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   TrailComponentClass;                               // 0x03F0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale1;                            // 0x0418(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale2;                            // 0x0440(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale3;                            // 0x0468(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale1;                          // 0x0490(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale2;                          // 0x04B8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale3;                          // 0x04E0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UNiagaraParameterCollection> GroomSolverSettingNpc;                             // 0x0508(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSwordConfig;                                   // 0x0530(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemBowConfig;                                     // 0x0558(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemWandConfig;                                    // 0x0580(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemCrossbowConfig;                                // 0x05A8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemStaffConfig;                                   // 0x05D0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSword2hConfig;                                 // 0x05F8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemDaggerConfig;                                  // 0x0620(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemShieldConfig;                                  // 0x0648(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemGrimoireConfig;                                // 0x0670(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemQuiverConfig;                                  // 0x0698(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSheathConfig;                                  // 0x06C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              CameraSettingTable;                                // 0x06E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              CameraCommonConfigTable;                           // 0x0710(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              CameraPresetTable;                                 // 0x0738(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UTLSceneCameraPersonalization> CameraPersonalizationDefault;                      // 0x0760(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UUnrealPhysicalConti>    FootprintPhysicalActionTree;                       // 0x0788(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              PreloadActionTreeTable;                            // 0x07B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AlternativeIdleDefaultPcActionTree;                // 0x07D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AlternativeIdleDefaultNpcActionTree;               // 0x07F0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AlternativeGlidingIdleActionTree;                  // 0x0808(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AlternativeSwimmingIdleActionTree;                 // 0x0820(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        RunBoostingActionTree;                             // 0x0838(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        RunAlternativeActionTree;                          // 0x0850(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        DivingActionTree;                                  // 0x0868(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        EmergeFromWaterActionTree;                         // 0x0880(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        GlidingDiveActionTree;                             // 0x0898(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        GlidingJumpActionTree;                             // 0x08B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        AODecalStayActionTree;                             // 0x08C8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        DefaultPolymorphOutActionTree;                     // 0x08E0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        DefaultPolymorphInActionTree;                      // 0x08F8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class ULevelSequence>          DefaultPolymorphLevelSequence;                     // 0x0910(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              CarrierTransformSequencer;                         // 0x0938(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              SystemAnimationData;                               // 0x0960(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class USystemAnimation>        SystemAnimationSequential;                         // 0x0988(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   FoAnimBP;                                          // 0x09B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftClassPtr<class UClass>                   AttachedItemAnimBP;                                // 0x09D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              WeaponSheathingInfo;                               // 0x0A00(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              WeaponSheathingSocketOffset;                       // 0x0A28(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UDataTable>              CompositePartGlobalSetting;                        // 0x0A50(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FSoftObjectPath                        DropmeshErrorNotExist;                             // 0x0A78(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UNiagaraSystem>          SimpleSpringSystem;                                // 0x0A90(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UNiagaraSystem>          SimpleRodsSystem;                                  // 0x0AB8(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UNiagaraSystem>          StableSpringSystem;                                // 0x0AE0(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSoftObjectPtr<class UNiagaraSystem>          StableRodsSystem;                                  // 0x0B08(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterialParameterCollection> HdrMPC;                                            // 0x00A8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterial>               EnvInfluenceMaterial;                              // 0x00D0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterial>               EnvInfluenceFadeMaterial;                          // 0x00F8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTextureRenderTarget2D>  EnvInfluenceRenderTarget;                          // 0x0120(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              EnvFieldTexture;                                   // 0x0148(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMapEnvironmentExternalTrackOverrideData> ExternalTrackOverride;                             // 0x0170(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterialInterface>      RouteShapeMaterial;                                // 0x0198(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UStaticMesh>             PathFollowWStaticMesh;                             // 0x01C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaproom>                PathFollowMapRoom;                                 // 0x01E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UCurveFloat>             TimeLapseCurve;                                    // 0x0210(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterialInterface>      MapWaterShapeMaterial;                             // 0x0238(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterial>               FarLandscapeMaterial;                              // 0x0260(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UStaticMesh>             CollisionCylinderComplex;                          // 0x0288(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UStaticMesh>             CollisionCylinderSimple;                           // 0x02B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneMakeupOption> CustomizingSkinColorSpaceMakeupOption;             // 0x02D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneMakeupOption> CustomizingDefaultColorSpaceMakeupOption;          // 0x0300(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterial>               ModelCharacterMergedMaterialForPC;                 // 0x0328(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UMaterial>               ModelCharacterMergedMaterialForNPC;                // 0x0350(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              ModelCharacterMergedMaterialIrisTexture;           // 0x0378(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTexture2D>              CompositePCDefaultSkinTexture;                     // 0x03A0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealMaterialSet>      CompositePCAtlasMaterialSet;                       // 0x03C8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   MyPCComponentClass;                                // 0x03F0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   TrailComponentClass;                               // 0x0418(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale1;                            // 0x0440(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale2;                            // 0x0468(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetMale3;                            // 0x0490(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale1;                          // 0x04B8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale2;                          // 0x04E0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UHiveEntityData>         CompoistePCPresetFemale3;                          // 0x0508(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UNiagaraParameterCollection> GroomSolverSettingNpc;                             // 0x0530(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSwordConfig;                                   // 0x0558(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemBowConfig;                                     // 0x0580(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemWandConfig;                                    // 0x05A8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemCrossbowConfig;                                // 0x05D0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemStaffConfig;                                   // 0x05F8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSword2hConfig;                                 // 0x0620(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemDaggerConfig;                                  // 0x0648(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemShieldConfig;                                  // 0x0670(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemGrimoireConfig;                                // 0x0698(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemQuiverConfig;                                  // 0x06C0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealSceneItemScaleConfig> ItemSheathConfig;                                  // 0x06E8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              CameraSettingTable;                                // 0x0710(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              CameraCommonConfigTable;                           // 0x0738(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              CameraPresetTable;                                 // 0x0760(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UTLSceneCameraPersonalization> CameraPersonalizationDefault;                      // 0x0788(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UUnrealPhysicalConti>    FootprintPhysicalActionTree;                       // 0x07B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              PreloadActionTreeTable;                            // 0x07D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AlternativeIdleDefaultPcActionTree;                // 0x0800(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AlternativeIdleDefaultNpcActionTree;               // 0x0818(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AlternativeGlidingIdleActionTree;                  // 0x0830(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AlternativeSwimmingIdleActionTree;                 // 0x0848(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        RunBoostingActionTree;                             // 0x0860(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        RunAlternativeActionTree;                          // 0x0878(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        DivingActionTree;                                  // 0x0890(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        EmergeFromWaterActionTree;                         // 0x08A8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        GlidingDiveActionTree;                             // 0x08C0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        GlidingJumpActionTree;                             // 0x08D8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        AODecalStayActionTree;                             // 0x08F0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        DefaultPolymorphOutActionTree;                     // 0x0908(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        DefaultPolymorphInActionTree;                      // 0x0920(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class ULevelSequence>          DefaultPolymorphLevelSequence;                     // 0x0938(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              CarrierTransformSequencer;                         // 0x0960(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              SystemAnimationData;                               // 0x0988(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class USystemAnimation>        SystemAnimationSequential;                         // 0x09B0(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   FoAnimBP;                                          // 0x09D8(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftClassPtr<class UClass>                   AttachedItemAnimBP;                                // 0x0A00(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              WeaponSheathingInfo;                               // 0x0A28(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              WeaponSheathingSocketOffset;                       // 0x0A50(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UDataTable>              CompositePartGlobalSetting;                        // 0x0A78(0x0028)(Edit, BlueprintVisible, BlueprintReadOnly, Config, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FSoftObjectPath                        DropmeshErrorNotExist;                             // 0x0AA0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UNiagaraSystem>          SimpleSpringSystem;                                // 0x0AB8(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UNiagaraSystem>          SimpleRodsSystem;                                  // 0x0AE0(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UNiagaraSystem>          StableSpringSystem;                                // 0x0B08(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UNiagaraSystem>          StableRodsSystem;                                  // 0x0B30(0x0028)(BlueprintReadOnly, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
 	static class UClass* StaticClass()
@@ -9277,83 +9278,84 @@ public:
 	}
 };
 static_assert(alignof(UTLGameData) == 0x000008, "Wrong alignment on UTLGameData");
-static_assert(sizeof(UTLGameData) == 0x000B30, "Wrong size on UTLGameData");
+static_assert(sizeof(UTLGameData) == 0x000B58, "Wrong size on UTLGameData");
 static_assert(offsetof(UTLGameData, GlobalMPC) == 0x000030, "Member 'UTLGameData::GlobalMPC' has a wrong offset!");
 static_assert(offsetof(UTLGameData, PermutationMPC) == 0x000058, "Member 'UTLGameData::PermutationMPC' has a wrong offset!");
 static_assert(offsetof(UTLGameData, OceanMPC) == 0x000080, "Member 'UTLGameData::OceanMPC' has a wrong offset!");
-static_assert(offsetof(UTLGameData, EnvInfluenceMaterial) == 0x0000A8, "Member 'UTLGameData::EnvInfluenceMaterial' has a wrong offset!");
-static_assert(offsetof(UTLGameData, EnvInfluenceFadeMaterial) == 0x0000D0, "Member 'UTLGameData::EnvInfluenceFadeMaterial' has a wrong offset!");
-static_assert(offsetof(UTLGameData, EnvInfluenceRenderTarget) == 0x0000F8, "Member 'UTLGameData::EnvInfluenceRenderTarget' has a wrong offset!");
-static_assert(offsetof(UTLGameData, EnvFieldTexture) == 0x000120, "Member 'UTLGameData::EnvFieldTexture' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ExternalTrackOverride) == 0x000148, "Member 'UTLGameData::ExternalTrackOverride' has a wrong offset!");
-static_assert(offsetof(UTLGameData, RouteShapeMaterial) == 0x000170, "Member 'UTLGameData::RouteShapeMaterial' has a wrong offset!");
-static_assert(offsetof(UTLGameData, PathFollowWStaticMesh) == 0x000198, "Member 'UTLGameData::PathFollowWStaticMesh' has a wrong offset!");
-static_assert(offsetof(UTLGameData, PathFollowMapRoom) == 0x0001C0, "Member 'UTLGameData::PathFollowMapRoom' has a wrong offset!");
-static_assert(offsetof(UTLGameData, TimeLapseCurve) == 0x0001E8, "Member 'UTLGameData::TimeLapseCurve' has a wrong offset!");
-static_assert(offsetof(UTLGameData, MapWaterShapeMaterial) == 0x000210, "Member 'UTLGameData::MapWaterShapeMaterial' has a wrong offset!");
-static_assert(offsetof(UTLGameData, FarLandscapeMaterial) == 0x000238, "Member 'UTLGameData::FarLandscapeMaterial' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CollisionCylinderComplex) == 0x000260, "Member 'UTLGameData::CollisionCylinderComplex' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CollisionCylinderSimple) == 0x000288, "Member 'UTLGameData::CollisionCylinderSimple' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CustomizingSkinColorSpaceMakeupOption) == 0x0002B0, "Member 'UTLGameData::CustomizingSkinColorSpaceMakeupOption' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CustomizingDefaultColorSpaceMakeupOption) == 0x0002D8, "Member 'UTLGameData::CustomizingDefaultColorSpaceMakeupOption' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialForPC) == 0x000300, "Member 'UTLGameData::ModelCharacterMergedMaterialForPC' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialForNPC) == 0x000328, "Member 'UTLGameData::ModelCharacterMergedMaterialForNPC' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialIrisTexture) == 0x000350, "Member 'UTLGameData::ModelCharacterMergedMaterialIrisTexture' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompositePCDefaultSkinTexture) == 0x000378, "Member 'UTLGameData::CompositePCDefaultSkinTexture' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompositePCAtlasMaterialSet) == 0x0003A0, "Member 'UTLGameData::CompositePCAtlasMaterialSet' has a wrong offset!");
-static_assert(offsetof(UTLGameData, MyPCComponentClass) == 0x0003C8, "Member 'UTLGameData::MyPCComponentClass' has a wrong offset!");
-static_assert(offsetof(UTLGameData, TrailComponentClass) == 0x0003F0, "Member 'UTLGameData::TrailComponentClass' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetMale1) == 0x000418, "Member 'UTLGameData::CompoistePCPresetMale1' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetMale2) == 0x000440, "Member 'UTLGameData::CompoistePCPresetMale2' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetMale3) == 0x000468, "Member 'UTLGameData::CompoistePCPresetMale3' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetFemale1) == 0x000490, "Member 'UTLGameData::CompoistePCPresetFemale1' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetFemale2) == 0x0004B8, "Member 'UTLGameData::CompoistePCPresetFemale2' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompoistePCPresetFemale3) == 0x0004E0, "Member 'UTLGameData::CompoistePCPresetFemale3' has a wrong offset!");
-static_assert(offsetof(UTLGameData, GroomSolverSettingNpc) == 0x000508, "Member 'UTLGameData::GroomSolverSettingNpc' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemSwordConfig) == 0x000530, "Member 'UTLGameData::ItemSwordConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemBowConfig) == 0x000558, "Member 'UTLGameData::ItemBowConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemWandConfig) == 0x000580, "Member 'UTLGameData::ItemWandConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemCrossbowConfig) == 0x0005A8, "Member 'UTLGameData::ItemCrossbowConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemStaffConfig) == 0x0005D0, "Member 'UTLGameData::ItemStaffConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemSword2hConfig) == 0x0005F8, "Member 'UTLGameData::ItemSword2hConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemDaggerConfig) == 0x000620, "Member 'UTLGameData::ItemDaggerConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemShieldConfig) == 0x000648, "Member 'UTLGameData::ItemShieldConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemGrimoireConfig) == 0x000670, "Member 'UTLGameData::ItemGrimoireConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemQuiverConfig) == 0x000698, "Member 'UTLGameData::ItemQuiverConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, ItemSheathConfig) == 0x0006C0, "Member 'UTLGameData::ItemSheathConfig' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CameraSettingTable) == 0x0006E8, "Member 'UTLGameData::CameraSettingTable' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CameraCommonConfigTable) == 0x000710, "Member 'UTLGameData::CameraCommonConfigTable' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CameraPresetTable) == 0x000738, "Member 'UTLGameData::CameraPresetTable' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CameraPersonalizationDefault) == 0x000760, "Member 'UTLGameData::CameraPersonalizationDefault' has a wrong offset!");
-static_assert(offsetof(UTLGameData, FootprintPhysicalActionTree) == 0x000788, "Member 'UTLGameData::FootprintPhysicalActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, PreloadActionTreeTable) == 0x0007B0, "Member 'UTLGameData::PreloadActionTreeTable' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AlternativeIdleDefaultPcActionTree) == 0x0007D8, "Member 'UTLGameData::AlternativeIdleDefaultPcActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AlternativeIdleDefaultNpcActionTree) == 0x0007F0, "Member 'UTLGameData::AlternativeIdleDefaultNpcActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AlternativeGlidingIdleActionTree) == 0x000808, "Member 'UTLGameData::AlternativeGlidingIdleActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AlternativeSwimmingIdleActionTree) == 0x000820, "Member 'UTLGameData::AlternativeSwimmingIdleActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, RunBoostingActionTree) == 0x000838, "Member 'UTLGameData::RunBoostingActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, RunAlternativeActionTree) == 0x000850, "Member 'UTLGameData::RunAlternativeActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, DivingActionTree) == 0x000868, "Member 'UTLGameData::DivingActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, EmergeFromWaterActionTree) == 0x000880, "Member 'UTLGameData::EmergeFromWaterActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, GlidingDiveActionTree) == 0x000898, "Member 'UTLGameData::GlidingDiveActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, GlidingJumpActionTree) == 0x0008B0, "Member 'UTLGameData::GlidingJumpActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AODecalStayActionTree) == 0x0008C8, "Member 'UTLGameData::AODecalStayActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, DefaultPolymorphOutActionTree) == 0x0008E0, "Member 'UTLGameData::DefaultPolymorphOutActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, DefaultPolymorphInActionTree) == 0x0008F8, "Member 'UTLGameData::DefaultPolymorphInActionTree' has a wrong offset!");
-static_assert(offsetof(UTLGameData, DefaultPolymorphLevelSequence) == 0x000910, "Member 'UTLGameData::DefaultPolymorphLevelSequence' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CarrierTransformSequencer) == 0x000938, "Member 'UTLGameData::CarrierTransformSequencer' has a wrong offset!");
-static_assert(offsetof(UTLGameData, SystemAnimationData) == 0x000960, "Member 'UTLGameData::SystemAnimationData' has a wrong offset!");
-static_assert(offsetof(UTLGameData, SystemAnimationSequential) == 0x000988, "Member 'UTLGameData::SystemAnimationSequential' has a wrong offset!");
-static_assert(offsetof(UTLGameData, FoAnimBP) == 0x0009B0, "Member 'UTLGameData::FoAnimBP' has a wrong offset!");
-static_assert(offsetof(UTLGameData, AttachedItemAnimBP) == 0x0009D8, "Member 'UTLGameData::AttachedItemAnimBP' has a wrong offset!");
-static_assert(offsetof(UTLGameData, WeaponSheathingInfo) == 0x000A00, "Member 'UTLGameData::WeaponSheathingInfo' has a wrong offset!");
-static_assert(offsetof(UTLGameData, WeaponSheathingSocketOffset) == 0x000A28, "Member 'UTLGameData::WeaponSheathingSocketOffset' has a wrong offset!");
-static_assert(offsetof(UTLGameData, CompositePartGlobalSetting) == 0x000A50, "Member 'UTLGameData::CompositePartGlobalSetting' has a wrong offset!");
-static_assert(offsetof(UTLGameData, DropmeshErrorNotExist) == 0x000A78, "Member 'UTLGameData::DropmeshErrorNotExist' has a wrong offset!");
-static_assert(offsetof(UTLGameData, SimpleSpringSystem) == 0x000A90, "Member 'UTLGameData::SimpleSpringSystem' has a wrong offset!");
-static_assert(offsetof(UTLGameData, SimpleRodsSystem) == 0x000AB8, "Member 'UTLGameData::SimpleRodsSystem' has a wrong offset!");
-static_assert(offsetof(UTLGameData, StableSpringSystem) == 0x000AE0, "Member 'UTLGameData::StableSpringSystem' has a wrong offset!");
-static_assert(offsetof(UTLGameData, StableRodsSystem) == 0x000B08, "Member 'UTLGameData::StableRodsSystem' has a wrong offset!");
+static_assert(offsetof(UTLGameData, HdrMPC) == 0x0000A8, "Member 'UTLGameData::HdrMPC' has a wrong offset!");
+static_assert(offsetof(UTLGameData, EnvInfluenceMaterial) == 0x0000D0, "Member 'UTLGameData::EnvInfluenceMaterial' has a wrong offset!");
+static_assert(offsetof(UTLGameData, EnvInfluenceFadeMaterial) == 0x0000F8, "Member 'UTLGameData::EnvInfluenceFadeMaterial' has a wrong offset!");
+static_assert(offsetof(UTLGameData, EnvInfluenceRenderTarget) == 0x000120, "Member 'UTLGameData::EnvInfluenceRenderTarget' has a wrong offset!");
+static_assert(offsetof(UTLGameData, EnvFieldTexture) == 0x000148, "Member 'UTLGameData::EnvFieldTexture' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ExternalTrackOverride) == 0x000170, "Member 'UTLGameData::ExternalTrackOverride' has a wrong offset!");
+static_assert(offsetof(UTLGameData, RouteShapeMaterial) == 0x000198, "Member 'UTLGameData::RouteShapeMaterial' has a wrong offset!");
+static_assert(offsetof(UTLGameData, PathFollowWStaticMesh) == 0x0001C0, "Member 'UTLGameData::PathFollowWStaticMesh' has a wrong offset!");
+static_assert(offsetof(UTLGameData, PathFollowMapRoom) == 0x0001E8, "Member 'UTLGameData::PathFollowMapRoom' has a wrong offset!");
+static_assert(offsetof(UTLGameData, TimeLapseCurve) == 0x000210, "Member 'UTLGameData::TimeLapseCurve' has a wrong offset!");
+static_assert(offsetof(UTLGameData, MapWaterShapeMaterial) == 0x000238, "Member 'UTLGameData::MapWaterShapeMaterial' has a wrong offset!");
+static_assert(offsetof(UTLGameData, FarLandscapeMaterial) == 0x000260, "Member 'UTLGameData::FarLandscapeMaterial' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CollisionCylinderComplex) == 0x000288, "Member 'UTLGameData::CollisionCylinderComplex' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CollisionCylinderSimple) == 0x0002B0, "Member 'UTLGameData::CollisionCylinderSimple' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CustomizingSkinColorSpaceMakeupOption) == 0x0002D8, "Member 'UTLGameData::CustomizingSkinColorSpaceMakeupOption' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CustomizingDefaultColorSpaceMakeupOption) == 0x000300, "Member 'UTLGameData::CustomizingDefaultColorSpaceMakeupOption' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialForPC) == 0x000328, "Member 'UTLGameData::ModelCharacterMergedMaterialForPC' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialForNPC) == 0x000350, "Member 'UTLGameData::ModelCharacterMergedMaterialForNPC' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ModelCharacterMergedMaterialIrisTexture) == 0x000378, "Member 'UTLGameData::ModelCharacterMergedMaterialIrisTexture' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompositePCDefaultSkinTexture) == 0x0003A0, "Member 'UTLGameData::CompositePCDefaultSkinTexture' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompositePCAtlasMaterialSet) == 0x0003C8, "Member 'UTLGameData::CompositePCAtlasMaterialSet' has a wrong offset!");
+static_assert(offsetof(UTLGameData, MyPCComponentClass) == 0x0003F0, "Member 'UTLGameData::MyPCComponentClass' has a wrong offset!");
+static_assert(offsetof(UTLGameData, TrailComponentClass) == 0x000418, "Member 'UTLGameData::TrailComponentClass' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetMale1) == 0x000440, "Member 'UTLGameData::CompoistePCPresetMale1' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetMale2) == 0x000468, "Member 'UTLGameData::CompoistePCPresetMale2' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetMale3) == 0x000490, "Member 'UTLGameData::CompoistePCPresetMale3' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetFemale1) == 0x0004B8, "Member 'UTLGameData::CompoistePCPresetFemale1' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetFemale2) == 0x0004E0, "Member 'UTLGameData::CompoistePCPresetFemale2' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompoistePCPresetFemale3) == 0x000508, "Member 'UTLGameData::CompoistePCPresetFemale3' has a wrong offset!");
+static_assert(offsetof(UTLGameData, GroomSolverSettingNpc) == 0x000530, "Member 'UTLGameData::GroomSolverSettingNpc' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemSwordConfig) == 0x000558, "Member 'UTLGameData::ItemSwordConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemBowConfig) == 0x000580, "Member 'UTLGameData::ItemBowConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemWandConfig) == 0x0005A8, "Member 'UTLGameData::ItemWandConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemCrossbowConfig) == 0x0005D0, "Member 'UTLGameData::ItemCrossbowConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemStaffConfig) == 0x0005F8, "Member 'UTLGameData::ItemStaffConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemSword2hConfig) == 0x000620, "Member 'UTLGameData::ItemSword2hConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemDaggerConfig) == 0x000648, "Member 'UTLGameData::ItemDaggerConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemShieldConfig) == 0x000670, "Member 'UTLGameData::ItemShieldConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemGrimoireConfig) == 0x000698, "Member 'UTLGameData::ItemGrimoireConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemQuiverConfig) == 0x0006C0, "Member 'UTLGameData::ItemQuiverConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, ItemSheathConfig) == 0x0006E8, "Member 'UTLGameData::ItemSheathConfig' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CameraSettingTable) == 0x000710, "Member 'UTLGameData::CameraSettingTable' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CameraCommonConfigTable) == 0x000738, "Member 'UTLGameData::CameraCommonConfigTable' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CameraPresetTable) == 0x000760, "Member 'UTLGameData::CameraPresetTable' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CameraPersonalizationDefault) == 0x000788, "Member 'UTLGameData::CameraPersonalizationDefault' has a wrong offset!");
+static_assert(offsetof(UTLGameData, FootprintPhysicalActionTree) == 0x0007B0, "Member 'UTLGameData::FootprintPhysicalActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, PreloadActionTreeTable) == 0x0007D8, "Member 'UTLGameData::PreloadActionTreeTable' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AlternativeIdleDefaultPcActionTree) == 0x000800, "Member 'UTLGameData::AlternativeIdleDefaultPcActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AlternativeIdleDefaultNpcActionTree) == 0x000818, "Member 'UTLGameData::AlternativeIdleDefaultNpcActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AlternativeGlidingIdleActionTree) == 0x000830, "Member 'UTLGameData::AlternativeGlidingIdleActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AlternativeSwimmingIdleActionTree) == 0x000848, "Member 'UTLGameData::AlternativeSwimmingIdleActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, RunBoostingActionTree) == 0x000860, "Member 'UTLGameData::RunBoostingActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, RunAlternativeActionTree) == 0x000878, "Member 'UTLGameData::RunAlternativeActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, DivingActionTree) == 0x000890, "Member 'UTLGameData::DivingActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, EmergeFromWaterActionTree) == 0x0008A8, "Member 'UTLGameData::EmergeFromWaterActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, GlidingDiveActionTree) == 0x0008C0, "Member 'UTLGameData::GlidingDiveActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, GlidingJumpActionTree) == 0x0008D8, "Member 'UTLGameData::GlidingJumpActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AODecalStayActionTree) == 0x0008F0, "Member 'UTLGameData::AODecalStayActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, DefaultPolymorphOutActionTree) == 0x000908, "Member 'UTLGameData::DefaultPolymorphOutActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, DefaultPolymorphInActionTree) == 0x000920, "Member 'UTLGameData::DefaultPolymorphInActionTree' has a wrong offset!");
+static_assert(offsetof(UTLGameData, DefaultPolymorphLevelSequence) == 0x000938, "Member 'UTLGameData::DefaultPolymorphLevelSequence' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CarrierTransformSequencer) == 0x000960, "Member 'UTLGameData::CarrierTransformSequencer' has a wrong offset!");
+static_assert(offsetof(UTLGameData, SystemAnimationData) == 0x000988, "Member 'UTLGameData::SystemAnimationData' has a wrong offset!");
+static_assert(offsetof(UTLGameData, SystemAnimationSequential) == 0x0009B0, "Member 'UTLGameData::SystemAnimationSequential' has a wrong offset!");
+static_assert(offsetof(UTLGameData, FoAnimBP) == 0x0009D8, "Member 'UTLGameData::FoAnimBP' has a wrong offset!");
+static_assert(offsetof(UTLGameData, AttachedItemAnimBP) == 0x000A00, "Member 'UTLGameData::AttachedItemAnimBP' has a wrong offset!");
+static_assert(offsetof(UTLGameData, WeaponSheathingInfo) == 0x000A28, "Member 'UTLGameData::WeaponSheathingInfo' has a wrong offset!");
+static_assert(offsetof(UTLGameData, WeaponSheathingSocketOffset) == 0x000A50, "Member 'UTLGameData::WeaponSheathingSocketOffset' has a wrong offset!");
+static_assert(offsetof(UTLGameData, CompositePartGlobalSetting) == 0x000A78, "Member 'UTLGameData::CompositePartGlobalSetting' has a wrong offset!");
+static_assert(offsetof(UTLGameData, DropmeshErrorNotExist) == 0x000AA0, "Member 'UTLGameData::DropmeshErrorNotExist' has a wrong offset!");
+static_assert(offsetof(UTLGameData, SimpleSpringSystem) == 0x000AB8, "Member 'UTLGameData::SimpleSpringSystem' has a wrong offset!");
+static_assert(offsetof(UTLGameData, SimpleRodsSystem) == 0x000AE0, "Member 'UTLGameData::SimpleRodsSystem' has a wrong offset!");
+static_assert(offsetof(UTLGameData, StableSpringSystem) == 0x000B08, "Member 'UTLGameData::StableSpringSystem' has a wrong offset!");
+static_assert(offsetof(UTLGameData, StableRodsSystem) == 0x000B30, "Member 'UTLGameData::StableRodsSystem' has a wrong offset!");
 
 // Class TLScene.TLAnimDynamicsAsset
 // 0x0048 (0x0070 - 0x0028)
@@ -12863,15 +12865,16 @@ static_assert(alignof(UTLEngineSubsystem) == 0x000008, "Wrong alignment on UTLEn
 static_assert(sizeof(UTLEngineSubsystem) == 0x000038, "Wrong size on UTLEngineSubsystem");
 
 // Class TLScene.TLEnvironmentMaterialParameterManager
-// 0x0060 (0x0088 - 0x0028)
+// 0x0068 (0x0090 - 0x0028)
 class UTLEnvironmentMaterialParameterManager final : public UObject
 {
 public:
 	class UMaterialParameterCollection*           GlobalMPC;                                         // 0x0028(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UMaterialParameterCollection*           OceanMPC;                                          // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_38[0x40];                                      // 0x0038(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
-	class UNiagaraParameterCollection*            GroomSolverSettingNpc;                             // 0x0078(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_80[0x8];                                       // 0x0080(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UMaterialParameterCollection*           HdrMPC;                                            // 0x0038(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_40[0x40];                                      // 0x0040(0x0040)(Fixing Size After Last Property [ Dumper-7 ])
+	class UNiagaraParameterCollection*            GroomSolverSettingNpc;                             // 0x0080(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_88[0x8];                                       // 0x0088(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -12884,10 +12887,11 @@ public:
 	}
 };
 static_assert(alignof(UTLEnvironmentMaterialParameterManager) == 0x000008, "Wrong alignment on UTLEnvironmentMaterialParameterManager");
-static_assert(sizeof(UTLEnvironmentMaterialParameterManager) == 0x000088, "Wrong size on UTLEnvironmentMaterialParameterManager");
+static_assert(sizeof(UTLEnvironmentMaterialParameterManager) == 0x000090, "Wrong size on UTLEnvironmentMaterialParameterManager");
 static_assert(offsetof(UTLEnvironmentMaterialParameterManager, GlobalMPC) == 0x000028, "Member 'UTLEnvironmentMaterialParameterManager::GlobalMPC' has a wrong offset!");
 static_assert(offsetof(UTLEnvironmentMaterialParameterManager, OceanMPC) == 0x000030, "Member 'UTLEnvironmentMaterialParameterManager::OceanMPC' has a wrong offset!");
-static_assert(offsetof(UTLEnvironmentMaterialParameterManager, GroomSolverSettingNpc) == 0x000078, "Member 'UTLEnvironmentMaterialParameterManager::GroomSolverSettingNpc' has a wrong offset!");
+static_assert(offsetof(UTLEnvironmentMaterialParameterManager, HdrMPC) == 0x000038, "Member 'UTLEnvironmentMaterialParameterManager::HdrMPC' has a wrong offset!");
+static_assert(offsetof(UTLEnvironmentMaterialParameterManager, GroomSolverSettingNpc) == 0x000080, "Member 'UTLEnvironmentMaterialParameterManager::GroomSolverSettingNpc' has a wrong offset!");
 
 // Class TLScene.TLFacialAnimationSection
 // 0x0018 (0x0100 - 0x00E8)
@@ -13628,12 +13632,13 @@ static_assert(alignof(UTLPhysicsStatics) == 0x000008, "Wrong alignment on UTLPhy
 static_assert(sizeof(UTLPhysicsStatics) == 0x000028, "Wrong size on UTLPhysicsStatics");
 
 // Class TLScene.TLPhysicsWorldSubsystem
-// 0x0060 (0x0090 - 0x0030)
+// 0x0068 (0x0098 - 0x0030)
 class UTLPhysicsWorldSubsystem final : public UWorldSubsystem
 {
 public:
-	class UUnrealPhysicalConti*                   PhysicalConti;                                     // 0x0030(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_38[0x58];                                      // 0x0038(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUnrealPhysicalConti*                   PhysicalConti;                                     // 0x0038(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_40[0x58];                                      // 0x0040(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -13646,8 +13651,8 @@ public:
 	}
 };
 static_assert(alignof(UTLPhysicsWorldSubsystem) == 0x000008, "Wrong alignment on UTLPhysicsWorldSubsystem");
-static_assert(sizeof(UTLPhysicsWorldSubsystem) == 0x000090, "Wrong size on UTLPhysicsWorldSubsystem");
-static_assert(offsetof(UTLPhysicsWorldSubsystem, PhysicalConti) == 0x000030, "Member 'UTLPhysicsWorldSubsystem::PhysicalConti' has a wrong offset!");
+static_assert(sizeof(UTLPhysicsWorldSubsystem) == 0x000098, "Wrong size on UTLPhysicsWorldSubsystem");
+static_assert(offsetof(UTLPhysicsWorldSubsystem, PhysicalConti) == 0x000038, "Member 'UTLPhysicsWorldSubsystem::PhysicalConti' has a wrong offset!");
 
 // Class TLScene.TLPlayAnimationTrack
 // 0x0008 (0x00A8 - 0x00A0)

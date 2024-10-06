@@ -31,11 +31,11 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects          = 0x094758E0;
-	constexpr int32 AppendString      = 0x03FFE400;
-	constexpr int32 GNames            = 0x09439300;
-	constexpr int32 GWorld            = 0x09173400;
-	constexpr int32 ProcessEvent      = 0x042101C0;
+	constexpr int32 GObjects          = 0x0947C960;
+	constexpr int32 AppendString      = 0x04004950;
+	constexpr int32 GNames            = 0x09440380;
+	constexpr int32 GWorld            = 0x0917A400;
+	constexpr int32 ProcessEvent      = 0x04216710;
 	constexpr int32 ProcessEventIdx   = 0x00000047;
 }
 
@@ -84,7 +84,7 @@ class UClass;
 class UObject;
 class UFunction;
 
-struct FName;
+class FName;
 
 namespace BasicFilesImpleUtils
 {

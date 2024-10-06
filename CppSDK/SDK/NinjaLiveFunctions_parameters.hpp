@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "NinjaPreset_structs.hpp"
+#include "SimPrecision_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "SimPrecision_Enum_structs.hpp"
 #include "RenderTargetListItem_structs.hpp"
+#include "NinjaPreset_structs.hpp"
 
 
 namespace SDK::Params

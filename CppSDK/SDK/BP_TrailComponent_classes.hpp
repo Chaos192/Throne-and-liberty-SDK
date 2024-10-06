@@ -56,7 +56,7 @@ public:
 	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                RayStartLocation;                                  // 0x02AC(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                SurfaceLocation;                                   // 0x02B8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TraceDepthXTimesRadius;                            // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TraceDepthXtimesRadius;                            // 0x02C4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_TrailComponent(int32 EntryPoint);
@@ -107,7 +107,7 @@ static_assert(offsetof(UBP_TrailComponent_C, TempRadiusForManager) == 0x0002A4, 
 static_assert(offsetof(UBP_TrailComponent_C, bDebugThis) == 0x0002A8, "Member 'UBP_TrailComponent_C::bDebugThis' has a wrong offset!");
 static_assert(offsetof(UBP_TrailComponent_C, RayStartLocation) == 0x0002AC, "Member 'UBP_TrailComponent_C::RayStartLocation' has a wrong offset!");
 static_assert(offsetof(UBP_TrailComponent_C, SurfaceLocation) == 0x0002B8, "Member 'UBP_TrailComponent_C::SurfaceLocation' has a wrong offset!");
-static_assert(offsetof(UBP_TrailComponent_C, TraceDepthXTimesRadius) == 0x0002C4, "Member 'UBP_TrailComponent_C::TraceDepthXTimesRadius' has a wrong offset!");
+static_assert(offsetof(UBP_TrailComponent_C, TraceDepthXtimesRadius) == 0x0002C4, "Member 'UBP_TrailComponent_C::TraceDepthXtimesRadius' has a wrong offset!");
 
 }
 

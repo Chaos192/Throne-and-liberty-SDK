@@ -24,7 +24,7 @@ class UBP_NamePlate_CostGauge_Optimization_C final : public UTLUserWidgetNamePla
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A88(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UTLImage*                               BG_dark;                                           // 0x0A90(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTLImage*                               BG_Dark;                                           // 0x0A90(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTLProgressBar*                         GaugePoint;                                        // 0x0A98(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTLImage*                               IMG_HPLight_inc;                                   // 0x0AA0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTLSpacer*                              TLSpacer_GaugeSize;                                // 0x0AA8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -48,7 +48,7 @@ public:
 static_assert(alignof(UBP_NamePlate_CostGauge_Optimization_C) == 0x000008, "Wrong alignment on UBP_NamePlate_CostGauge_Optimization_C");
 static_assert(sizeof(UBP_NamePlate_CostGauge_Optimization_C) == 0x000AC0, "Wrong size on UBP_NamePlate_CostGauge_Optimization_C");
 static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, UberGraphFrame) == 0x000A88, "Member 'UBP_NamePlate_CostGauge_Optimization_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, BG_dark) == 0x000A90, "Member 'UBP_NamePlate_CostGauge_Optimization_C::BG_dark' has a wrong offset!");
+static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, BG_Dark) == 0x000A90, "Member 'UBP_NamePlate_CostGauge_Optimization_C::BG_Dark' has a wrong offset!");
 static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, GaugePoint) == 0x000A98, "Member 'UBP_NamePlate_CostGauge_Optimization_C::GaugePoint' has a wrong offset!");
 static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, IMG_HPLight_inc) == 0x000AA0, "Member 'UBP_NamePlate_CostGauge_Optimization_C::IMG_HPLight_inc' has a wrong offset!");
 static_assert(offsetof(UBP_NamePlate_CostGauge_Optimization_C, TLSpacer_GaugeSize) == 0x000AA8, "Member 'UBP_NamePlate_CostGauge_Optimization_C::TLSpacer_GaugeSize' has a wrong offset!");

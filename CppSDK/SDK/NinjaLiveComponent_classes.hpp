@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
+#include "UserInput_Enum_structs.hpp"
+#include "SimPrecision_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "SingleObjectType_Enum_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "SimPrecision_Enum_structs.hpp"
 #include "RenderTargetList_structs.hpp"
-#include "UserInput_Enum_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "SingleObjectType_Enum_structs.hpp"
 
 
 namespace SDK

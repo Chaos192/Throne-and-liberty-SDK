@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "SimPrecision_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "SimPrecision_Enum_structs.hpp"
 
 
 namespace SDK

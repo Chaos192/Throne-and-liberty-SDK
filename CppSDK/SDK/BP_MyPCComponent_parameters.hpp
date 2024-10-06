@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "TLScene_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Struct_PolymorphTrails_structs.hpp"
 #include "Struct_PolymorphTrailData_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "TLScene_structs.hpp"
 
 
 namespace SDK::Params

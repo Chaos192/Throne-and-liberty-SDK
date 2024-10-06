@@ -68,7 +68,7 @@ public:
 	TArray<struct FST_TrailDataUV>                TrailUVDataArray;                                  // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                         MaxPileWidthAtXTimesRadius;                        // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PileWidthXTimesRadius;                             // 0x039C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         TraceDepthXTimesRadius;                            // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         TraceDepthXtimesRadius;                            // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_BP_TrailsManager(int32 EntryPoint);
@@ -140,7 +140,7 @@ static_assert(offsetof(ABP_TrailsManager_C, TrailDataArray) == 0x000378, "Member
 static_assert(offsetof(ABP_TrailsManager_C, TrailUVDataArray) == 0x000388, "Member 'ABP_TrailsManager_C::TrailUVDataArray' has a wrong offset!");
 static_assert(offsetof(ABP_TrailsManager_C, MaxPileWidthAtXTimesRadius) == 0x000398, "Member 'ABP_TrailsManager_C::MaxPileWidthAtXTimesRadius' has a wrong offset!");
 static_assert(offsetof(ABP_TrailsManager_C, PileWidthXTimesRadius) == 0x00039C, "Member 'ABP_TrailsManager_C::PileWidthXTimesRadius' has a wrong offset!");
-static_assert(offsetof(ABP_TrailsManager_C, TraceDepthXTimesRadius) == 0x0003A0, "Member 'ABP_TrailsManager_C::TraceDepthXTimesRadius' has a wrong offset!");
+static_assert(offsetof(ABP_TrailsManager_C, TraceDepthXtimesRadius) == 0x0003A0, "Member 'ABP_TrailsManager_C::TraceDepthXtimesRadius' has a wrong offset!");
 
 }
 
